@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2774BF942978253700A7ACA2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2774BF932978253700A7ACA2 /* FirebaseAuth */; };
+		2774BF962978253700A7ACA2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2774BF952978253700A7ACA2 /* FirebaseFirestore */; };
 		27A17C8E296F00BC005EF337 /* OneTonBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A17C8D296F00BC005EF337 /* OneTonBooksApp.swift */; };
 		27A17C90296F00BC005EF337 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A17C8F296F00BC005EF337 /* ContentView.swift */; };
 		27A17C92296F00BF005EF337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A17C91296F00BF005EF337 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2774BF942978253700A7ACA2 /* FirebaseAuth in Frameworks */,
+				2774BF962978253700A7ACA2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = OneTonBooks;
+			packageProductDependencies = (
+				2774BF932978253700A7ACA2 /* FirebaseAuth */,
+				2774BF952978253700A7ACA2 /* FirebaseFirestore */,
+			);
 			productName = OneTonBooks;
 			productReference = 27A17C8A296F00BB005EF337 /* OneTonBooks.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 27A17C81296F00BB005EF337;
+			packageReferences = (
+				2774BF922978253700A7ACA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 27A17C8B296F00BB005EF337 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +594,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2774BF922978253700A7ACA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2774BF932978253700A7ACA2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2774BF922978253700A7ACA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2774BF952978253700A7ACA2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2774BF922978253700A7ACA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27A17C82296F00BB005EF337 /* Project object */;
 }
