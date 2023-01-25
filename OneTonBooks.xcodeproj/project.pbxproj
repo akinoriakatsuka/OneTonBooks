@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276A15B3297999BC000435A6 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A15B2297999BC000435A6 /* BookRepository.swift */; };
+		276A15B5297AFD19000435A6 /* BookUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A15B4297AFD19000435A6 /* BookUseCase.swift */; };
+		276A15B7297AFDAF000435A6 /* FirestoreBookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A15B6297AFDAF000435A6 /* FirestoreBookDTO.swift */; };
 		2774BF942978253700A7ACA2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2774BF932978253700A7ACA2 /* FirebaseAuth */; };
 		2774BF962978253700A7ACA2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2774BF952978253700A7ACA2 /* FirebaseFirestore */; };
+		2774BF9A297833AB00A7ACA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2774BF99297833AB00A7ACA2 /* GoogleService-Info.plist */; };
+		2774BF9D2978385F00A7ACA2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774BF9C2978385F00A7ACA2 /* Book.swift */; };
+		2774BF9F2978477400A7ACA2 /* FirestoreBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774BF9E2978477400A7ACA2 /* FirestoreBookRepository.swift */; };
 		27A17C8E296F00BC005EF337 /* OneTonBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A17C8D296F00BC005EF337 /* OneTonBooksApp.swift */; };
 		27A17C90296F00BC005EF337 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A17C8F296F00BC005EF337 /* ContentView.swift */; };
 		27A17C92296F00BF005EF337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A17C91296F00BF005EF337 /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		276A15B2297999BC000435A6 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		276A15B4297AFD19000435A6 /* BookUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUseCase.swift; sourceTree = "<group>"; };
+		276A15B6297AFDAF000435A6 /* FirestoreBookDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreBookDTO.swift; sourceTree = "<group>"; };
+		2774BF99297833AB00A7ACA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2774BF9C2978385F00A7ACA2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		2774BF9E2978477400A7ACA2 /* FirestoreBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreBookRepository.swift; sourceTree = "<group>"; };
 		27A17C8A296F00BB005EF337 /* OneTonBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTonBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A17C8D296F00BC005EF337 /* OneTonBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTonBooksApp.swift; sourceTree = "<group>"; };
 		27A17C8F296F00BC005EF337 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +87,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276A15AE297998AD000435A6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				276A15B129799983000435A6 /* Firestore */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		276A15AF297998D4000435A6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				276A15B4297AFD19000435A6 /* BookUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		276A15B0297998F5000435A6 /* Presantation */ = {
+			isa = PBXGroup;
+			children = (
+				27A17C8F296F00BC005EF337 /* ContentView.swift */,
+			);
+			path = Presantation;
+			sourceTree = "<group>";
+		};
+		276A15B129799983000435A6 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				2774BF9E2978477400A7ACA2 /* FirestoreBookRepository.swift */,
+				276A15B6297AFDAF000435A6 /* FirestoreBookDTO.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		2774BF9B2978384000A7ACA2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2774BF9C2978385F00A7ACA2 /* Book.swift */,
+				276A15B2297999BC000435A6 /* BookRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		27A17C81296F00BB005EF337 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +152,13 @@
 		27A17C8C296F00BB005EF337 /* OneTonBooks */ = {
 			isa = PBXGroup;
 			children = (
+				2774BF9B2978384000A7ACA2 /* Domain */,
+				276A15B0297998F5000435A6 /* Presantation */,
+				276A15AF297998D4000435A6 /* UseCase */,
+				276A15AE297998AD000435A6 /* Infrastructure */,
 				27A17C8D296F00BC005EF337 /* OneTonBooksApp.swift */,
-				27A17C8F296F00BC005EF337 /* ContentView.swift */,
 				27A17C91296F00BF005EF337 /* Assets.xcassets */,
+				2774BF99297833AB00A7ACA2 /* GoogleService-Info.plist */,
 				27A17C93296F00BF005EF337 /* Preview Content */,
 			);
 			path = OneTonBooks;
@@ -244,6 +302,7 @@
 			files = (
 				27A17C95296F00BF005EF337 /* Preview Assets.xcassets in Resources */,
 				27A17C92296F00BF005EF337 /* Assets.xcassets in Resources */,
+				2774BF9A297833AB00A7ACA2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A17C90296F00BC005EF337 /* ContentView.swift in Sources */,
+				2774BF9F2978477400A7ACA2 /* FirestoreBookRepository.swift in Sources */,
+				276A15B5297AFD19000435A6 /* BookUseCase.swift in Sources */,
+				276A15B3297999BC000435A6 /* BookRepository.swift in Sources */,
 				27A17C8E296F00BC005EF337 /* OneTonBooksApp.swift in Sources */,
+				276A15B7297AFDAF000435A6 /* FirestoreBookDTO.swift in Sources */,
+				2774BF9D2978385F00A7ACA2 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
